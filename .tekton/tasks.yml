@@ -53,6 +53,7 @@ spec:
       workingDir: $(workspaces.source.path)
       script: |
         #!/bin/bash
+        ls -la
         set -e
         python -m pip install --upgrade pip wheel
         pip install -r requirements.txt
